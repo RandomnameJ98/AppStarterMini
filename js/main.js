@@ -10,7 +10,7 @@ function starterCheck(){
     let phpMessage=document.createElement("P");
     phpMessage.className="sub-text";
     mainContainer.appendChild(phpMessage);
-    let dataToSend=2.75;
+    let dataToSend=Math.round(Math.random()*100)/10;
     phpMessage.innerText="Making request to main.php... [data sent: "+dataToSend+"]";
     makeRequestWPromise(phpMessage,"data="+dataToSend);
 }
